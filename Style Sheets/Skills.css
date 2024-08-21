@@ -1,0 +1,277 @@
+/* skills section starts */
+.skills {
+    min-height: 90vh;
+    background: linear-gradient(to left, #9c118a, #ce21b7);
+  }
+  .skills h2 {
+    color: #fff;
+  }
+  .skills .heading span {
+    color: #ffae00;
+  }
+  .skills .container {
+    background: rgba(11, 11, 12, 0.4);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+  .skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 22, 0.9);
+    transition: 0.2s;
+  }
+  .skills .container .bar:hover {
+    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+  }
+  .skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .skills .container .bar .info i {
+    font-size: 4rem;
+  }
+  .skills .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-left: 0.5rem;
+  }
+  /* skills media queries starts*/
+  @media screen and (max-width: 600px) {
+    .skills .container {
+      padding: 0;
+      margin: 0;
+    }
+    .skills .container .row {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 1rem;
+      padding: 2rem 0.2rem 2rem 0.2rem;
+      gap: 1rem;
+    }
+    .skills .container {
+      margin-top: 5px;
+      width: 100%;
+    }
+    .skills .container .row {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      flex-wrap: wrap;
+      gap: 1.8rem;
+    }
+    .skills .container .info i {
+      font-size: 4rem;
+    }
+    .skills .container .info span {
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: "Poppins";
+      margin-left: 0.5rem;
+    }
+  }
+  /* skills media queries ends*/
+  /* skills section ends */
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h2.heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2.heading i {
+    margin-right: 10px;
+  }
+  
+  h2.heading span {
+    color: #ffae00;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  #skillsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .info img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .info span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
+  /* education section starts */
+  .education {
+    background: #e5ecfb;
+    min-height: 80vh;
+  }
+  .education .qoute {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  .education .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .education span{
+      color: #359b0d;
+  }
+  .education .box-container .box {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    overflow: hidden;
+    transition: 0.3s;
+    background: rgb(252, 252, 252);
+  }
+  .education .box-container .box:hover {
+    transform: scale(1.03);
+    box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+  }
+  .education .box-container .box .image {
+    flex: 1 1 20rem;
+    width: 100%;
+  }
+  .education .box-container .box img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 1 1 70rem;
+  }
+  .education .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #9c118a;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .education .box-container .box .content p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .education h4 {
+    font-size: 2rem;
+    color: rgb(34, 109, 0);
+    text-align: left;
+    margin: 1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+  }
+  
+  /* education media queries starts*/
+  @media screen and (max-width: 600px) {
+    .education .box-container .box {
+      flex-direction: column;
+      width: 100%;
+    }
+    .education .box-container .box .image {
+      width: 100%;
+      height: 25rem;
+    }
+    .education .box-container .box img {
+      width: 100%;
+    }
+    .education .box-container .box .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      flex-wrap: wrap;
+      flex: 0;
+    }
+    .education .btns {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+  /* education media queries ends*/
+  /* education section ends */
+  
+  
+  .b{
+    width:40px;
+    height:40px;
+    background:radial-gradient(circle at 5px 5px, rgb(52, 137, 165),transparent, rgba(116, 105, 105, 0.7)) ;
+    box-shadow:inset 0 0 10px rgb(144, 206, 226);
+    border-radius:100px;
+    position:absolute ;
+    bottom:15px;
+    filter:contrast(150%);
+    box-shadow:0px 2px 4px rgba(0,0,0,.1);
+    
+  }
+  
+  
+  
